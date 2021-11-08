@@ -1,20 +1,13 @@
 import React from 'react'
 import './App.css';
-
+import FunctionalComponent from './components/FuntionalComponent'
 function App() {
-  //without JSX
-  // return React.createElement("div", {
-  //   className: "App",
-  //   item: "one",
-  //   id: "myid"
-  // }, React.createElement("h1", null, "Jubaer Ahamed"));
-
-  //withJSX
   return (
-    <div className="App" item="one" id="myid">
-      <h1>Jubaer Ahamed</h1>
+    <div className="App">
+      <FunctionalComponent/>
     </div>
   )
+
 }
 
 export default App;
