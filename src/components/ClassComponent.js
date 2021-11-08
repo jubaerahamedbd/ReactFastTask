@@ -5,8 +5,11 @@ class ClassComponent extends Component {
     constructor(){
         super()
         this.state= {
-            CityName: "Berlin",
-            CountryName: "Germany"
+            CityName: ["Berlin","Dhaka"],
+            CountryName: {
+                Asia : "Bangladesh",
+                Europe : "Germany"
+            }
         }
     }
     DoThis(e){
@@ -16,8 +19,8 @@ class ClassComponent extends Component {
         return (
             <div>
                 <button className="btn btn-primary" onClick={this.DoThis.bind(this,"I am from Class Parameter")}>Click Me From Class</button>
-                <h4>City Name: {this.state.CityName}</h4>
-                <h4>Country Name: {this.state.CountryName}</h4>
+                <h4>City Name: {this.state.CityName[0]}</h4>
+                <h4>Country Name: {this.state.CountryName.Europe}</h4>
             </div>
         )
     }
