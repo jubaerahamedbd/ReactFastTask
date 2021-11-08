@@ -1,5 +1,6 @@
 import React from 'react'
 import './App.css';
+import Jsonlist from './components/Jsonlist';
 // import ClassComponent from './components/ClassComponent';
 // import FunctionalComponent from './components/FunctionalComponent';
 // import Condition from './components/Condition';
@@ -7,11 +8,11 @@ import './App.css';
 // import FindDomNode from './components/FindDomNode';
 // import Form from './components/Form';
 // import Signup from './components/Signup';
-import List from './components/List';
+// import List from './components/List';
 function App() {
   return (
     <div className="App">
-      <List />
+      <Jsonlist />
     </div>
   )
 
