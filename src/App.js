@@ -3,10 +3,12 @@ import './App.css';
 import ClassComponent from './components/ClassComponent';
 import FunctionalComponent from './components/FunctionalComponent';
 import Condition from './components/Condition';
+import Refresh from './components/Refresh';
 function App() {
   return (
     <div className="App">
-      <Condition/>
+
+      <Refresh />
     </div>
   )
 
