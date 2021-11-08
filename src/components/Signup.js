@@ -7,10 +7,11 @@ class Signup extends Component {
             fname: "",
             lname: "",
             email: "",
-            mobile: ""
+            mobile: "",
         }
     }
     onChangeHandler = (event) => {
+
         this.setState({
             [event.target.name]: event.target.value
         })
@@ -38,15 +39,18 @@ class Signup extends Component {
                 this.setState({ mobile: "Mobile No Not Valid" })
             }
         }
+
+
+
     }
     render() {
         return (
             <div>
                 <form>
-                <p>First Name: {this.state.fname}</p>
-                <p>Last Name: {this.state.lname}</p>
-                <p>Email: {this.state.email}</p>
-                <p>Mobile No: {this.state.mobile}</p>
+                    <p>First Name: {this.state.fname}</p>
+                    <p>Last Name: {this.state.lname}</p>
+                    <p>Email: {this.state.email}</p>
+                    <p>Mobile No: {this.state.mobile}</p>
                 
                     <input onChange={this.onChangeHandler} name='fname' type='text' placeholder='First Name' /><br />
                     <input onChange={this.onChangeHandler} name='lname' type='text' placeholder='Last Name' /><br />

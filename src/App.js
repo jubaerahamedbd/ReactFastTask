@@ -6,11 +6,12 @@ import './App.css';
 // import Refresh from './components/Refresh';
 // import FindDomNode from './components/FindDomNode';
 // import Form from './components/Form';
-import Signup from './components/Signup';
+// import Signup from './components/Signup';
+import List from './components/List';
 function App() {
   return (
     <div className="App">
-      <Signup />
+      <List />
     </div>
   )
 
