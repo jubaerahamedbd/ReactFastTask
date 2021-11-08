@@ -5,22 +5,19 @@ class ClassComponent extends Component {
     constructor(){
         super()
         this.state= {
-            CityName: ["Berlin","Dhaka"],
-            CountryName: {
-                Asia : "Bangladesh",
-                Europe : "Germany"
-            }
+            CityName: "Berlin"
         }
     }
     DoThis(e){
-        alert(e)
+        this.setState({
+            CityName:e
+        })
     }
     render() {
         return (
             <div>
-                <button className="btn btn-primary" onClick={this.DoThis.bind(this,"I am from Class Parameter")}>Click Me From Class</button>
-                <h4>City Name: {this.state.CityName[0]}</h4>
-                <h4>Country Name: {this.state.CountryName.Europe}</h4>
+                <button className="btn btn-primary" onClick={this.DoThis.bind(this,"Dhaka")}>Change State</button>
+                <h4>City Name: {this.state.CityName}</h4>
             </div>
         )
     }
