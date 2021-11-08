@@ -5,11 +5,12 @@ import './App.css';
 // import Condition from './components/Condition';
 // import Refresh from './components/Refresh';
 // import FindDomNode from './components/FindDomNode';
-import Form from './components/Form';
+// import Form from './components/Form';
+import Signup from './components/Signup';
 function App() {
   return (
     <div className="App">
-      <Form />
+      <Signup />
     </div>
   )
 
